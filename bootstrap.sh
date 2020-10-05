@@ -11,7 +11,7 @@ then
   if type -p docker-compose
   then
     echo "Docker Compose OK"
-
+    command docker-compose up -d
   else
     echo "compose not found"
   fi

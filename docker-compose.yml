@@ -34,6 +34,22 @@ services:
       campaign-network:
         ipv4_address: 10.0.5.3
 
+  gateway:
+    image: bapadua/gateway
+    build:
+      context: ./gateway
+      dockerfile: Dockerfile
+    restart: always
+    environment:
+      TZ: America/Sao_Paulo
+    ports:
+      - 8080:8080
+    depends_on:
+      - kafka
+    networks:
+      campaign-network:
+        ipv4_address: 10.0.5.4
+
   campaign:
     image: bapadua/campaign
     build:
@@ -46,10 +62,10 @@ services:
     ports:
       - 8081:8081
     depends_on:
-      - kafka
+      - gateway
     networks:
       campaign-network:
-        ipv4_address: 10.0.5.4
+        ipv4_address: 10.0.5.5
 
   partner:
     image: bapadua/partner
@@ -62,7 +78,7 @@ services:
     ports:
       - 8082:8082
     depends_on:
-      - kafka
+      - gateway
     networks:
       campaign-network:
-        ipv4_address: 10.0.5.5
+        ipv4_address: 10.0.5.6

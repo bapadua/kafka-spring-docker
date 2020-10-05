@@ -6,9 +6,7 @@ COPY .mvn .mvn
 COPY pom.xml .
 COPY src src
 
-RUN ./mvnw install -DskipTests
+RUN ./mvnw clean install -DskipTests
 
 COPY target/gateway-0.0.1-SNAPSHOT.jar japp.jar
 CMD ["java", "-jar", "japp.jar"]
-
-
