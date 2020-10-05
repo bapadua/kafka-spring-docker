@@ -11,3 +11,5 @@ chmod +x bootstrap.sh
 No windows
 rodar o windows-boostrap.bat
 
+
+![Arquitetura proposta](https://github.com/bapadua/kafka-spring-docker/blob/master/campaign.png)
