@@ -13,6 +13,7 @@ import java.util.List;
  * @author ice_bpadua on 26/09/2020
  */
 @RestController
+@RequestMapping("v1")
 public class CampaignController {
 
     private final CampaignService campaignService;

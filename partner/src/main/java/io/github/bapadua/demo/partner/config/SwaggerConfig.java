@@ -15,7 +15,8 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @Configuration
 @EnableSwagger2
 public class SwaggerConfig {
-    private final static String basePackage = "io.github.bapadua.demo";
+    private final static String basePackage = "io.github.bapadua.demo.partner.controllers";
+
     public Docket api() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
@@ -32,4 +33,5 @@ public class SwaggerConfig {
                 .licenseUrl("https://bapadua.github.io")
                 .build();
     }
+
 }

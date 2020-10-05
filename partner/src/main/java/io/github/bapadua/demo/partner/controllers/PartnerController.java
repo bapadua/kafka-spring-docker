@@ -15,6 +15,7 @@ import java.util.UUID;
  * @author ice_bpadua on 02/10/2020
  */
 @RestController
+@RequestMapping("v1")
 @Api(value = "Api sócio torcedor")
 public class PartnerController {
 
