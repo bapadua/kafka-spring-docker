@@ -1,0 +1,27 @@
+[
+  {
+    "campaignName": "Campanha A",
+    "campaignStartDate": "2020-06-01",
+    "campaignEndDate": "2020-06-03"
+  },
+  {
+    "campaignName": "Campanha B",
+    "campaignStartDate": "2020-06-01",
+    "campaignEndDate": "2020-07-01"
+  },
+  {
+    "campaignName": "Campanha C",
+    "campaignStartDate": "2020-08-01",
+    "campaignEndDate": "2020-08-03"
+  },
+  {
+    "campaignName": "Campanha D",
+    "campaignStartDate": "2020-06-01",
+    "campaignEndDate": "2021-01-04"
+  },
+  {
+    "campaignName": "Campanha E",
+    "campaignStartDate": "2020-06-01",
+    "campaignEndDate": "2021-01-05"
+  }
+]

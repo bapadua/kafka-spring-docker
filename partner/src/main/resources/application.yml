@@ -1,0 +1,25 @@
+server:
+  port: 8082
+
+spring:
+  kafka:
+    bootstrap-servers: 10.0.5.1:9092
+    consumer:
+      group-id: partner-campaign
+      auto-offset-reset: earliest
+      properties:
+        spring:
+          json:
+            add:
+              type:
+                headers: false
+
+  datasource:
+    url: jdbc:h2:mem:testdb;DB_CLOSE_ON_EXIT=FALSE
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  h2:
+    console:
+      enabled: true
+      path: /h2

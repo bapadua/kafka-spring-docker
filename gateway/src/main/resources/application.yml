@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+zuul:
+  host:
+    connect-timeout-millis: 10000
+  routes:
+    campaign:
+      path: /campaign/**
+      sensitiveHeaders:
+      url: http://localhost:8081
+    partner:
+      path: /partner/**
+      sensitiveHeaders:
+      url: http://localhost:8082

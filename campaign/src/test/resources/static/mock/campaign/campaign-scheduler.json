@@ -1,0 +1,13 @@
+[
+  {
+    "campaignName": "Primeira Campanha",
+    "campaignStartDate": "2020-10-01",
+    "campaignEndDate": "2021-10-03"
+  },
+  {
+    "campaignName": "Segunda Campanha",
+    "campaignStartDate": "2020-10-01",
+    "campaignEndDate": "2021-10-02"
+  }
+]
+
